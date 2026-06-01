@@ -1,0 +1,105 @@
+# Crazy Look Alikes — Generative Engine Optimization Map
+
+> A lingerie brand or boutique looking to showcase and promote specific intimate apparel pieces — including a red bra and green lingerie — with an emphasis on encouraging customers to try them on. The brand appears to have multiple models or presenters ('both') to feature the products.
+
+---
+
+## Pages
+
+### Home
+https://example.com
+Discover daring lingerie styles made for every body at Crazy Look Alikes. From vibrant red bras to lush green sets, your fashion boutique online awaits. Shop now!
+
+### Seen on Both
+https://example.com/seen-on-both
+See our stunning red bra and green lingerie worn by multiple models — proof that great women apparel flatters every figure. Find your perfect fit and try it on today!
+
+### Occasion Picks
+https://example.com/occasion-picks
+From date nights to Black Friday hauls, our curated occasion picks deliver the best clothing Black Friday deals on lingerie styles you will absolutely love. Grab yours now!
+
+### Contact
+https://example.com/contact
+Have questions about sizing, styling our green lingerie, or snagging the best clothing Black Friday deals? Reach out to Crazy Look Alikes and our team will get back to you fast!
+
+### Products
+https://example.com/products
+Our Products - Crazy Look Alikes
+
+### Cart
+https://example.com/cart
+Your Cart
+
+### Checkout
+https://example.com/checkout
+Checkout
+
+### Login
+https://example.com/login
+Customer Login
+
+### Account
+https://example.com/account
+My Account
+
+### Order Success
+https://example.com/order-success
+Thank you for your order
+
+### Product Detail
+https://example.com/product/:slug
+Product Details - Crazy Look Alikes
+
+### Category
+https://example.com/category/:slug
+Products - Crazy Look Alikes
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## Products
+
+_No products are currently configured._
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Crazy Look Alikes
+A lingerie brand or boutique looking to showcase and promote specific intimate apparel pieces — including a red bra and green lingerie — with an emphasis on encouraging customers to try them on. The brand appears to have multiple models or presenters ('both') to feature the products.
+
+## Services/Products
+- red bra
+- green lingerie
+- try-on experience
+
+## Target Audience
+- Fashion Influencers
+- Special Occasion Shoppers
+- College Students
+
+## Industry
+Fashion & Apparel
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
+- Products (JSON): https://example.com/products.json
+- Products (Google Merchant RSS): https://example.com/product-feed.xml
