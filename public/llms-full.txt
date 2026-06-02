@@ -80,6 +80,9 @@ Skip to main content
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -481,6 +484,9 @@ Skip to main content
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -864,6 +870,9 @@ Skip to main content
 
 
 - Products Products
+
+
+
 
 
 
@@ -1295,6 +1304,9 @@ Skip to main content
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -1710,6 +1722,9 @@ Products - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -1900,6 +1915,9 @@ Cart - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -2062,6 +2080,9 @@ Checkout - Crazy Look Alikes
 
 
 - Products Products
+
+
+
 
 
 
@@ -2418,6 +2439,9 @@ Login - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -2587,6 +2611,9 @@ My Account - Crazy Look Alikes
 
 
 - Products Products
+
+
+
 
 
 
@@ -2919,6 +2946,9 @@ Order Received! - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -3109,6 +3139,9 @@ Return Policy - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -3140,7 +3173,7 @@ Products
 # Return Policy
 
 
-Last Updated: 6/1/2026
+Last Updated: 6/2/2026
 
 
 
@@ -3328,6 +3361,9 @@ Product Details - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -3496,6 +3532,9 @@ Products - Crazy Look Alikes
 
 
 
+
+
+
 - Home
 - Seen on Both
 - Occasion Picks
@@ -3648,7 +3687,25 @@ Privacy Policy
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Products Products
+
+
+
 
 
 
@@ -3662,6 +3719,16 @@ Privacy Policy
 
 
 
+
+
+
+
+
+
+
+
+
+Products
 
 
 
@@ -3863,7 +3930,25 @@ Accessibility Statement
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Products Products
+
+
+
 
 
 
@@ -3877,6 +3962,16 @@ Accessibility Statement
 
 
 
+
+
+
+
+
+
+
+
+
+Products
 
 
 
@@ -4084,7 +4179,25 @@ Terms & Conditions
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Products Products
+
+
+
 
 
 
@@ -4098,6 +4211,16 @@ Terms & Conditions
 
 
 
+
+
+
+
+
+
+
+
+
+Products
 
 
 

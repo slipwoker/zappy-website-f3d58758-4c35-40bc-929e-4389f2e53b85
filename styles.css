@@ -6380,6 +6380,638 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 
 
+
+
+/* Legal Pages Content Styles */
+
+/* Legal Pages Content Styles */
+.legal-page-content {
+  padding: 120px 0 60px;
+  min-height: 60vh;
+  color: #f5f5f5;
+}
+
+.legal-page-content .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.legal-page-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.legal-page-content .last-updated {
+  color: #999;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.legal-page-content h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.legal-page-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.legal-page-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+[dir="rtl"] .legal-page-content ul {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+.legal-page-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.legal-page-content .contact-box,
+.legal-page-content .contact-info {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legal-page-content .contact-box a,
+.legal-page-content .contact-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal-page-content .contact-box a:hover,
+.legal-page-content .contact-info a:hover {
+  opacity: 0.8;
+}
+
+.legal-page-content .important-notice,
+.legal-page-content .legal-reference {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid currentColor;
+}
+
+[dir="rtl"] .legal-page-content .important-notice,
+[dir="rtl"] .legal-page-content .legal-reference {
+  border-left: none;
+  border-right: 4px solid currentColor;
+}
+
+/* Cookie Consent Styles */
+
+/* Cookie Consent Customizations ccCssV13 */
+:root {
+  /* --cc-bg has to STAY translucent (with the matching backdrop-filter on
+   * the bar below) so the slim bar reads as a frosted overlay rather than
+   * a solid horizontal stripe slapped on top of the page. The preferences
+   * modal — which doesn't use backdrop-filter — overrides this to a solid
+   * white below so it doesn't render see-through against the page. */
+  --cc-bg: rgba(255, 255, 255, 0.96);
+  --cc-modal-bg: #ffffff;
+  --cc-primary-color: #1f2937;
+  --cc-secondary-color: #4b5563;
+  --cc-btn-primary-bg: #c83a46;
+  --cc-btn-primary-color: #ffffff;
+  --cc-btn-primary-border: #c83a46;
+  --cc-btn-primary-hover-bg: #af212d;
+  --cc-btn-primary-hover-border: #af212d;
+  --cc-btn-primary-hover-color: #ffffff;
+  /* --cc-btn-secondary-* are used by BOTH the bar's "Customize" link and
+   * the preferences modal's "Accept Necessary" / "Save Preferences" pills.
+   * We keep the token defaults sensible (light grey fill, dark text) so
+   * the preferences-modal buttons stay visible, then override only
+   * .zappy-cookie-banner__button--customize directly to render the
+   * Customize link as a transparent underlined text. */
+  --cc-btn-secondary-bg: #f3f4f6;
+  --cc-btn-secondary-color: #1f2937;
+  --cc-btn-secondary-border: #e5e7eb;
+  --cc-btn-secondary-hover-bg: #e5e7eb;
+  --cc-btn-secondary-hover-color: #111827;
+  --cc-btn-secondary-hover-border: #d1d5db;
+  --cc-toggle-on-bg: #c83a46;
+}
+
+#cc-main,
+#cc--main {
+  font-family: inherit !important;
+  color: var(--cc-primary-color);
+}
+
+/* === Zappy-owned slim bottom bar ===
+ * Single-row inline layout: [description text] ......... [Customize] [Accept]
+ * The banner is our DOM (#zappy-cookie-banner), not the library's #cm
+ * consent modal. That avoids vanilla-cookieconsent's internal
+ * <button><span>Label</span></button> structure entirely.
+ */
+#zappy-cookie-banner {
+  position: fixed !important;
+  inset: auto 0 0 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 10px 56px 10px 20px !important;
+  background: var(--cc-bg) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border: none !important;
+  border-top: 1px solid rgba(200, 58, 70, 0.18) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.04) !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 52px !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  z-index: 2147483646;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 16px !important;
+  max-width: 1200px;
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 !important;
+  min-height: 32px !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__text {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: var(--cc-primary-color) !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  line-height: 32px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__actions {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex: 0 0 auto;
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 0 16px !important;
+  height: 32px !important;
+  min-height: 0 !important;
+  line-height: 1 !important;
+  border-radius: 999px !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+/* Primary "Accept" — filled pill in site primary color */
+#zappy-cookie-banner .zappy-cookie-banner__button--accept {
+  background-color: var(--cc-btn-primary-bg) !important;
+  color: var(--cc-btn-primary-color) !important;
+  border: 1px solid var(--cc-btn-primary-border) !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__button--accept:hover {
+  background-color: var(--cc-btn-primary-hover-bg) !important;
+  border-color: var(--cc-btn-primary-hover-border) !important;
+}
+
+/* Secondary "Customize" — borderless underlined text link.
+ * Same height as the Accept pill so the row stays perfectly aligned, but
+ * with no fill, no border, and an underline that sits 3px below the
+ * baseline (text-underline-offset). Hard-coded brand color so this rule
+ * doesn't depend on --cc-btn-secondary-* (which have to stay sensible
+ * defaults for the preferences modal's two secondary pills). */
+#zappy-cookie-banner .zappy-cookie-banner__button--customize {
+  background-color: transparent !important;
+  color: #c83a46 !important;
+  border: none !important;
+  padding: 0 8px !important;
+  height: 32px !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-radius: 6px !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__button--customize:hover {
+  color: #af212d !important;
+  background-color: transparent !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__close {
+  position: absolute !important;
+  top: 8px !important;
+  right: 12px !important;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 999px !important;
+  color: var(--cc-secondary-color) !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+#zappy-cookie-banner .zappy-cookie-banner__close:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  color: var(--cc-primary-color) !important;
+}
+#zappy-cookie-banner .zappy-cookie-banner__button:focus-visible,
+#zappy-cookie-banner .zappy-cookie-banner__close:focus-visible {
+  outline: 2px solid var(--cc-btn-primary-bg) !important;
+  outline-offset: 2px;
+}
+/* RTL: anchor the X to the top-LEFT and shift body padding accordingly. */
+[dir="rtl"] #zappy-cookie-banner {
+  padding: 10px 20px 10px 56px !important;
+}
+[dir="rtl"] #zappy-cookie-banner .zappy-cookie-banner__close {
+  right: auto !important;
+  left: 12px !important;
+}
+
+/* === Preferences modal — minimalist restyle ===
+ * The modal opens when "Customize" is clicked. It MUST render as a solid
+ * card — pre-fix it inherited the bar's translucent --cc-bg without the
+ * matching backdrop-filter, leaving the page footer visibly bleeding
+ * through the modal box, the title, the toggle rows, and the bottom
+ * button row. Solid white box + clean shadow + an explicit slightly
+ * darker scrim on the overlay restores proper modal hierarchy. */
+/* The scrim belongs on wrapper layers only. In vanilla-cookieconsent v3,
+ * .pm / #pm is the preferences card itself, so styling .pm as the dark
+ * overlay makes the card look transparent. */
+#cc-main .pm-wrapper,
+#cc--main .pm-wrapper,
+#cc-main .pm-wrapper.pm--box,
+#cc--main .pm-wrapper.pm--box {
+  background: rgba(0, 0, 0, 0.32) !important;
+}
+
+#cc-main #pm,
+#cc--main #pm,
+#cc-main .pm,
+#cc--main .pm,
+#cc-main .pm .pm__box,
+#cc--main .pm .pm__box,
+#cc-main .pm__box,
+#cc--main .pm__box {
+  background: var(--cc-modal-bg) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18) !important;
+}
+
+#cc-main .pm__header,
+#cc--main .pm__header,
+#cc-main .pm__body,
+#cc--main .pm__body,
+#cc-main .pm__footer,
+#cc--main .pm__footer,
+#cc-main .pm__section,
+#cc--main .pm__section {
+  background: var(--cc-modal-bg) !important;
+}
+
+#cc-main .pm__title,
+#cc--main .pm__title {
+  font-weight: 600 !important;
+  color: var(--cc-primary-color) !important;
+}
+
+#cc-main .pm__btn[data-role="accept-all"],
+#cc--main .pm__btn[data-role="accept-all"] {
+  background-color: var(--cc-btn-primary-bg) !important;
+  border-color: var(--cc-btn-primary-border) !important;
+  color: var(--cc-btn-primary-color) !important;
+  border-radius: 999px !important;
+}
+
+#cc-main .pm__btn[data-role="accept-all"]:hover,
+#cc--main .pm__btn[data-role="accept-all"]:hover {
+  background-color: var(--cc-btn-primary-hover-bg) !important;
+  border-color: var(--cc-btn-primary-hover-border) !important;
+}
+
+/* Secondary modal pills — "Accept Necessary" + "Save Preferences".
+ * Must be a visible solid fill (light grey on white card) so users can
+ * actually find them. Pre-fix these inherited --cc-btn-secondary-bg:
+ * transparent (used by the bar's Customize text link), making them
+ * invisible against the modal background. */
+#cc-main .pm__btn,
+#cc--main .pm__btn {
+  border-radius: 999px !important;
+}
+#cc-main .pm__btn[data-role="necessary"],
+#cc--main .pm__btn[data-role="necessary"],
+#cc-main .pm__btn[data-role="save"],
+#cc--main .pm__btn[data-role="save"] {
+  background-color: var(--cc-btn-secondary-bg) !important;
+  color: var(--cc-btn-secondary-color) !important;
+  border: 1px solid var(--cc-btn-secondary-border) !important;
+}
+#cc-main .pm__btn[data-role="necessary"]:hover,
+#cc--main .pm__btn[data-role="necessary"]:hover,
+#cc-main .pm__btn[data-role="save"]:hover,
+#cc--main .pm__btn[data-role="save"]:hover {
+  background-color: var(--cc-btn-secondary-hover-bg) !important;
+  color: var(--cc-btn-secondary-hover-color) !important;
+  border-color: var(--cc-btn-secondary-hover-border) !important;
+}
+
+/* Toggle thumbs in brand color when on */
+#cc-main .section__toggle:checked + .toggle__icon,
+#cc--main .section__toggle:checked + .toggle__icon,
+#cc-main .section__toggle:checked ~ .toggle__icon,
+#cc--main .section__toggle:checked ~ .toggle__icon {
+  background-color: var(--cc-toggle-on-bg) !important;
+}
+
+/* Mobile fallback: two rows (description on top, buttons below) */
+@media (max-width: 640px) {
+  #zappy-cookie-banner {
+    padding: 10px 14px !important;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__inner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    height: auto !important;
+    min-height: 0 !important;
+    line-height: 1.4 !important;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__button--accept {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+/* Cookie preferences button in legal footer keeps default behavior */
+.cookie-preferences-btn:hover {
+  text-decoration: none !important;
+}
+
+/* Accessibility Styles */
+
+/* Basic Accessibility Enhancements */
+:root {
+  --accessibility-focus: #1E1E1E;
+}
+
+/* Skip link styles */
+.skip-link:focus {
+  position: absolute !important;
+  top: 6px !important;
+  left: 6px !important;
+  background: #000 !important;
+  color: white !important;
+  padding: 8px !important;
+  text-decoration: none !important;
+  z-index: 10000 !important;
+  border-radius: 4px !important; transform: none; }
+
+/* Enhanced focus indicators */
+*:focus {
+  outline: 2px solid var(--accessibility-focus) !important;
+  outline-offset: 2px !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+
+/* Custom Accessibility Toolbar Styling - Zappy Style */
+
+/* Main button icon - ONLY target the floating button, not menu elements */
+#mic-access-tool-general-button {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* AGGRESSIVELY hide all text in the button */
+#mic-access-tool-general-button,
+#mic-access-tool-general-button *:not(svg):not(path):not(circle):not(rect):not(polygon):not(ellipse):not(line):not(polyline):not(g) {
+  font-size: 0 !important;
+  color: transparent !important;
+  text-indent: -9999px !important;
+  line-height: 0 !important;
+  letter-spacing: -999em !important;
+  white-space: nowrap !important;
+}
+
+/* Hide text nodes specifically */
+
+/* Hover state - keep text hidden */
+#mic-access-tool-general-button:hover {
+  background-color: rgba(30, 30, 30, 0.1) !important;
+  background: rgba(30, 30, 30, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(30, 30, 30, 0.2) !important;
+  font-size: 0 !important;
+  color: transparent !important;
+  text-indent: -9999px !important;
+}
+
+/* Target the SVG and make it the selected color */
+#mic-access-tool-general-button svg {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  /* Convert green to selected color using dynamic CSS filter */
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+}
+
+/* Also directly target all SVG elements to be the selected color */
+#mic-access-tool-general-button svg,
+#mic-access-tool-general-button svg *,
+#mic-access-tool-general-button svg path,
+#mic-access-tool-general-button svg circle,
+#mic-access-tool-general-button svg rect,
+#mic-access-tool-general-button svg polygon,
+#mic-access-tool-general-button svg ellipse,
+#mic-access-tool-general-button svg line,
+#mic-access-tool-general-button svg polyline,
+#mic-access-tool-general-button svg g {
+  fill: #1E1E1E !important;
+  stroke: #1E1E1E !important;
+  color: #1E1E1E !important;
+}
+
+/* Target images if the icon is an img instead of SVG */
+#mic-access-tool-general-button img,
+#mic-access-tool-general-button i {
+  width: 18px !important;
+  height: 18px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  /* Convert green to selected color using dynamic filter */
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+}
+
+/* Menu header with selected color */
+#mic-access-tool-box .mic-access-tool-box-header,
+.mic-access-tool-box-header,
+div[id*="mic-access-tool-box"] header,
+div[id*="mic-access-tool-box"] .header {
+  background: #1E1E1E !important;
+  color: white !important;
+}
+
+/* Make header text white - title and close button */
+#mic-access-tool-box .mic-access-tool-box-header *,
+.mic-access-tool-box-header *,
+div[id*="mic-access-tool-box"] header *,
+div[id*="mic-access-tool-box"] .header * {
+  color: white !important;
+}
+
+/* Close button text */
+#mic-access-tool-box .mic-access-tool-box-header button,
+#mic-access-tool-box .mic-access-tool-box-header a,
+#mic-access-tool-box [class*="close"],
+#mic-access-tool-box button[title*="close"],
+#mic-access-tool-box button[title*="Close"] {
+  color: white !important;
+  background: transparent !important;
+}
+
+/* Active buttons and highlights in menu */
+#mic-access-tool-box button.active,
+#mic-access-tool-box button:hover,
+div[id*="mic-access-tool-box"] button.active,
+div[id*="mic-access-tool-box"] button:hover {
+  border-color: #1E1E1E !important;
+  color: #1E1E1E !important;
+  background-color: rgba(30, 30, 30, 0.1) !important;
+}
+
+/* Reset button */
+#mic-access-tool-box button[title*="reset"],
+#mic-access-tool-box button[title*="Reset"],
+#mic-access-tool-box [class*="reset"],
+div[id*="mic-access-tool-box"] button[class*="reset"] {
+  background: #1E1E1E !important;
+  color: white !important;
+}
+
+/* Reset button text and icon */
+#mic-access-tool-box button[title*="reset"] *,
+#mic-access-tool-box button[title*="Reset"] *,
+#mic-access-tool-box [class*="reset"] *,
+div[id*="mic-access-tool-box"] button[class*="reset"] * {
+  color: white !important;
+}
+
+/* Accessibility widget - displayed by default on both mobile and desktop */
+/* Position: opposite side from WhatsApp button (RTL sites → left, LTR sites → right) */
+#mic-access-tool-general-button,
+.mic-access-tool-general-button,
+#mic-init-access-tool .mic-access-tool-general-button,
+#mic-init-access-tool #mic-access-tool-general-button,
+._access-icon {
+  display: flex !important;
+}
+
+
+
+
+
 /* ==ZAPPY V2 E-COMMERCE THEME CSS== */
 /* ═══════════════════════════════════════════════════════════════════════════ */
 /* V2 E-COMMERCE CSS - Clean V2 Variables Only                                  */
@@ -6452,12 +7084,12 @@ main.page-container.ecommerce-page,
 
 /* Product cards - V2 themed (full-bleed media + overlay favorite) */
 .product-card {
-  border: 1px solid var(--border-dark);
+  border: none;
   border-radius: 12px;
   padding: 0;
   overflow: hidden;
   background: rgba(255,255,255,0.05);
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -6465,7 +7097,6 @@ main.page-container.ecommerce-page,
 }
 .product-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-color: var(--accent);
 }
 .product-card .product-card-inner {
   display: flex;
@@ -6603,7 +7234,7 @@ a, button {
   background: rgba(255,255,255,1);
   box-shadow: 0 2px 10px rgba(231,76,60,0.22);
 }
-.card-favorite-btn svg { width: 18px; height: 18px; }
+.card-favorite-btn svg, .product-card .card-quickview-btn svg { width: 18px; height: 18px; }
 [dir="rtl"] .card-favorite-btn {
   left: 8px;
   right: auto;
@@ -6617,7 +7248,8 @@ a, button {
 }
 .product-card h3 {
   margin: 0 0 6px;
-  font-size: 16px;
+  font-size: 18px !important;
+  font-weight: 700 !important;
   color: inherit;
   line-height: 1.3 !important;
   display: -webkit-box;
@@ -6629,7 +7261,7 @@ a, button {
   word-break: break-word;
 }
 .product-card p {
-  font-size: 14px !important;
+  font-size: 16px !important;
   color: var(--text-muted);
   line-height: 1.45em !important;
   display: -webkit-box !important;
@@ -6700,30 +7332,152 @@ a, button {
   box-sizing: border-box;
 }
 
-/* Product card layout variants */
-.product-grid.layout-compact { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
-.product-grid:not(.view-list) .product-card.compact .product-card-media { aspect-ratio: 1 / 1; }
-.product-card.compact .card-content { padding: 10px 12px 12px; }
-.product-card.compact h3 { font-size: 14px; margin: 0 0 4px; -webkit-line-clamp: 1; }
-.product-card.compact p { display: none; }
-.product-card.compact .price { font-size: 16px; padding-top: 2px; }
-.product-card.compact .add-to-cart { display: none; }
-
+/* Product card layout variants (Standard square / Portrait tall) */
 .product-grid.layout-standard { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
 .product-card.standard p { -webkit-line-clamp: 2 !important; }
-.product-card.standard .add-to-cart { display: none; }
+.product-grid.layout-portrait { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+.product-card.portrait p { -webkit-line-clamp: 2 !important; }
+.product-grid.layout-compact, .product-grid.layout-detailed { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+.product-grid:not(.view-list) .product-card.portrait .product-card-media { aspect-ratio: 3 / 4; }
+.product-grid:not(.view-list) .product-card.portrait .product-card-image-link img { object-fit: cover !important; }
 
-.product-grid.layout-detailed { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
-.product-grid:not(.view-list) .product-card.detailed .product-card-media { aspect-ratio: 1 / 1; }
-.product-card.detailed .card-content { padding: 14px 16px 12px; }
-.product-card.detailed h3 { font-size: 18px; margin: 0 0 8px; -webkit-line-clamp: 2; }
-.product-card.detailed p {
-  -webkit-line-clamp: 8 !important;
-  margin-bottom: 8px;
-  min-height: 0;
+/* ===== Product card v2 (standard/portrait) ===== */
+.product-card .product-card-body { display: flex; flex-direction: column; flex: 1; min-width: 0; padding: 12px 14px 14px; }
+.product-grid:not(.view-list) .product-card .product-card-body .card-content { padding: 0; }
+.product-card .card-desc { color: var(--text-secondary, #6b7280); font-size: 16px; line-height: 1.35; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.product-card .product-card-actions { position: absolute; top: 10px; inset-inline-end: 10px; z-index: 5; display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.product-card .product-card-actions .card-favorite-btn,
+.product-card .card-quickview-btn { position: static; top: auto; right: auto; left: auto; inset: auto; width: 34px; height: 34px; border-radius: 50%; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.92); color: var(--text, #374151); box-shadow: 0 1px 4px rgba(0,0,0,0.12); transition: transform 0.15s, background 0.15s; }
+.product-card .card-quickview-btn:hover,
+.product-card .product-card-actions .card-favorite-btn:hover { background: #fff; transform: scale(1.08); }
+.product-card .card-quickview-btn { opacity: 0; pointer-events: none; }
+.product-card:hover .card-quickview-btn { opacity: 1; pointer-events: auto; }
+.zc-swatches { display: flex; align-items: center; gap: 4px; margin: 8px 0 0; position: relative; }
+.zc-swatch-track { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 6px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; padding: 2px; }
+.zc-swatch-track::-webkit-scrollbar { display: none; }
+/* No transform/transition on swatches: a scale-up on select (sticky :hover on touch)
+   briefly enlarged the dot and pushed the 2px selected ring past the scroll-track's clip
+   region, so the ring looked cut off at the top for ~half a second before settling. The
+   selected ring must appear instantly in its final, non-clipped state. */
+.zc-swatch { width: 20px; height: 20px; min-width: 20px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.12); background: none; padding: 0; cursor: pointer; position: relative; display: inline-flex; align-items: center; justify-content: center; }
+.zc-swatch .zc-swatch-dot { width: 100%; height: 100%; border-radius: 50%; display: block; }
+.zc-swatch.selected { box-shadow: 0 0 0 2px var(--accent, var(--primary, #ff0083)); border-color: transparent; }
+.zc-swatch.out-of-stock { opacity: 0.45; }
+.zc-swatch.out-of-stock::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: linear-gradient(to top left, transparent calc(50% - 1px), rgba(0,0,0,0.55) 50%, transparent calc(50% + 1px)); pointer-events: none; }
+.product-card-size-overlay { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 8px; background: linear-gradient(to top, rgba(0,0,0,0.45), transparent); opacity: 0; transform: translateY(6px); transition: opacity 0.18s, transform 0.18s; pointer-events: none; }
+.product-card:hover .product-card-size-overlay,
+.product-card.zc-sizes-pinned .product-card-size-overlay { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.zc-size-strip { display: flex; align-items: center; gap: 4px; }
+.zc-size-track { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 6px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+.zc-size-track::-webkit-scrollbar { display: none; }
+.zc-size { min-width: 30px; height: 28px; padding: 0 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.8); background: rgba(255,255,255,0.95); color: #111; font-size: 12px; font-weight: 600; cursor: pointer; position: relative; flex-shrink: 0; }
+.zc-size.selected { background: var(--accent, var(--primary, #ff0083)); color: #fff; border-color: var(--accent, var(--primary, #ff0083)); }
+.zc-size.out-of-stock { opacity: 0.6; }
+.zc-size.out-of-stock::after { content: ''; position: absolute; top: 50%; left: 4px; right: 4px; height: 1px; background: #111; transform: rotate(-12deg); pointer-events: none; }
+/* Scroll arrows (swatches + sizes): exact Figma chevrons — plain stroked glyphs,
+   no circular background/shadow. flex:0 0 auto reserves their own space so they
+   never overlap a swatch/pill (the track is flex:1 1 0 min-width:0 beside them). */
+.zc-scroll { flex: 0 0 auto; width: 16px; height: 16px; padding: 0; border: none; background: transparent; color: #4a4a4a; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: none; }
+.zc-scroll svg { width: 16px; height: 16px; display: block; }
+[dir="rtl"] .zc-scroll svg { transform: scaleX(-1); }
+/* On the size strip the chevrons sit over the dark image-bottom gradient. */
+.zc-size-strip .zc-scroll { color: #fff; }
+.product-card .product-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; }
+.product-card .product-card-footer .price { padding-top: 0; }
+.product-card .card-cart-btn { flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; border: none; cursor: pointer; background: var(--accent, var(--primary, #ff0083)); color: var(--text-light, #fff); display: inline-flex; align-items: center; justify-content: center; transition: filter 0.18s, transform 0.12s; }
+.product-card .card-cart-btn:hover { filter: brightness(0.92); transform: translateY(-1px); }
+.product-card a.card-cart-btn { text-decoration: none; }
+@media (max-width: 768px) {
+  .product-card .product-card-size-overlay { display: none !important; }
+  .product-card .card-quickview-btn { opacity: 1; pointer-events: auto; }
 }
-.product-card.detailed .price { font-size: 20px; padding-top: 8px; }
-.product-card.detailed .add-to-cart { display: block; width: auto; padding: 12px; margin: 0 14px 14px; align-self: stretch; box-sizing: border-box; }
+
+/* ===== Quick View modal ===== */
+.zappy-qv-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1400; }
+.zappy-qv-overlay[hidden] { display: none; }
+/* max-height leaves ~110px top+bottom clearance so a tall (centered) modal never tucks
+   under the sticky site header / catalog sub-nav. The mobile bottom-sheet rule below
+   overrides this with its own 80vh. */
+.zappy-qv-modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1401; width: min(960px, 94vw); max-height: calc(100vh - 220px); background: var(--surface, var(--bg, #fff)); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+.zappy-qv-modal[hidden] { display: none; }
+.zappy-qv-close { position: absolute; top: 12px; inset-inline-end: 12px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: none; background: rgba(255,255,255,0.92); color: #111; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+.zappy-qv-close:hover { background: #fff; }
+.zappy-qv-content { display: flex; gap: 0; max-height: calc(100vh - 220px); overflow: hidden; }
+.zappy-qv-loading { padding: 60px 24px; text-align: center; color: var(--text-secondary, #6b7280); width: 100%; }
+.zappy-qv-gallery { flex: 1 1 50%; min-width: 0; background: #f3f4f6; display: flex; flex-direction: column; }
+.zappy-qv-main-img { position: relative; flex: 1; min-height: 320px; }
+/* width/height are !important so a generated theme's responsive "img { height: auto !important }"
+   rule (common on mobile) can't collapse this absolutely-positioned image to its intrinsic
+   square size, which would make it overflow the fixed-height frame and cover the thumbnail
+   strip + title on the mobile sheet. Our selector (0,1,1) out-ranks the bare img rule. */
+.zappy-qv-main-img img { position: absolute; inset: 0; width: 100% !important; height: 100% !important; object-fit: contain; }
+.zappy-qv-main-img .no-image-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 48px; color: #9ca3af; }
+/* Thumbnail filmstrip: a horizontal scroller with floating prev/next arrows.
+   We keep the modal at a fixed height (the mobile sheet is a hard 80vh) and let
+   the strip scroll instead of wrapping into extra rows that would overflow. */
+.zappy-qv-thumbs-wrap { position: relative; padding: 10px; }
+.zappy-qv-thumbs { display: flex; gap: 8px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+.zappy-qv-thumbs::-webkit-scrollbar { display: none; }
+.zappy-qv-thumb-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; width: 30px; height: 30px; border-radius: 50%; border: none; background: rgba(255,255,255,0.95); color: #222; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 1px 5px rgba(0,0,0,0.22); padding: 0; }
+.zappy-qv-thumb-nav:hover { background: #fff; }
+.zappy-qv-thumb-nav[hidden] { display: none; }
+.zappy-qv-thumb-nav.prev { inset-inline-start: 4px; }
+.zappy-qv-thumb-nav.next { inset-inline-end: 4px; }
+/* Chevrons are authored left/right (physical); flip them in RTL so prev/next still
+   point toward the inline-start / inline-end edge they sit on. */
+[dir="rtl"] .zappy-qv-thumb-nav svg { transform: scaleX(-1); }
+.zappy-qv-thumb { width: 56px; height: 56px; flex-shrink: 0; border-radius: 8px; overflow: hidden; border: 2px solid transparent; background: #fff; cursor: pointer; padding: 0; }
+.zappy-qv-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.zappy-qv-thumb.selected { border-color: var(--accent, var(--primary, #ff0083)); }
+.zappy-qv-info { flex: 1 1 50%; min-width: 0; padding: 36px 28px 28px; overflow-y: auto; display: flex; flex-direction: column; gap: 14px; }
+.zappy-qv-title { font-size: 24px; margin: 0; color: var(--text, #111); }
+.zappy-qv-desc { color: var(--text-secondary, #6b7280); font-size: 14px; line-height: 1.5; margin: 0; }
+.zappy-qv-price { display: flex; align-items: baseline; gap: 10px; }
+.zappy-qv-price-now { font-size: 22px; font-weight: 700; color: var(--text, #111); }
+.zappy-qv-price-was { font-size: 15px; color: var(--text-secondary, #9ca3af); text-decoration: line-through; }
+.zappy-qv-variants { display: flex; flex-direction: column; gap: 14px; }
+.zappy-qv-vgroup { display: flex; flex-direction: column; gap: 6px; }
+.zappy-qv-vlabel { font-size: 13px; font-weight: 600; color: var(--text, #374151); }
+.zappy-qv-vvalues { display: flex; flex-wrap: wrap; gap: 8px; }
+.zappy-qv-swatch { width: 30px; height: 30px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.12); background: none; padding: 0; cursor: pointer; position: relative; }
+.zappy-qv-swatch .zappy-qv-swatch-dot { width: 100%; height: 100%; border-radius: 50%; display: block; }
+.zappy-qv-swatch.selected { box-shadow: 0 0 0 2px var(--accent, var(--primary, #ff0083)); border-color: transparent; }
+.zappy-qv-swatch.out-of-stock { opacity: 0.45; }
+.zappy-qv-swatch.out-of-stock::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: linear-gradient(to top left, transparent calc(50% - 1px), rgba(0,0,0,0.55) 50%, transparent calc(50% + 1px)); }
+.zappy-qv-pill { min-width: 38px; height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--border-color, #e5e7eb); background: var(--surface, #fff); color: var(--text, #374151); font-size: 13px; font-weight: 600; cursor: pointer; position: relative; }
+.zappy-qv-pill.selected { border-color: var(--accent, var(--primary, #ff0083)); background: var(--accent, var(--primary, #ff0083)); color: #fff; }
+.zappy-qv-pill.out-of-stock { opacity: 0.6; }
+.zappy-qv-pill.out-of-stock::after { content: ''; position: absolute; top: 50%; left: 6px; right: 6px; height: 1px; background: currentColor; transform: rotate(-12deg); pointer-events: none; }
+.zappy-qv-actions { display: flex; align-items: center; gap: 12px; margin-top: 4px; }
+.zappy-qv-qty { display: inline-flex; align-items: center; flex: 0 0 auto; border: 1px solid var(--border-color, #e5e7eb); border-radius: 10px; overflow: hidden; }
+.zappy-qv-qty-btn { width: 38px !important; flex: 0 0 38px; height: 44px; border: none; background: transparent; font-size: 18px; cursor: pointer; color: var(--text, #374151); }
+/* width is !important + fixed flex-basis so a site theme's global "input { width: 100% }"
+   rule can't stretch the stepper input and blow out the actions row. */
+.zappy-qv-qty-input { width: 48px !important; flex: 0 0 48px; min-width: 0; box-sizing: border-box; height: 44px; border: none; text-align: center; font-size: 15px; }
+/* Container-scoped (specificity 0,2,0) so it out-ranks the site theme's
+   "input, textarea, select { padding: 12px 16px }" (and any input[type=...] variant):
+   without this, the 16px side-padding eats the whole 34px input on mobile and the
+   quantity digit gets clipped/hidden behind the +/- buttons. */
+.zappy-qv-qty .zappy-qv-qty-input, .zappy-qv-qty .zappy-qv-qty-btn { padding: 0 !important; }
+.zappy-qv-addcart { flex: 1; min-height: 44px; padding: 0 18px; border: none; border-radius: 10px; background: var(--accent, var(--primary, #ff0083)); color: var(--text-light, #fff); font-weight: 600; font-size: 15px; cursor: pointer; transition: filter 0.18s; text-align: center; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; white-space: nowrap; }
+.zappy-qv-addcart:hover { filter: brightness(0.92); }
+.zappy-qv-addcart.is-disabled, .zappy-qv-addcart:disabled { background: #cbd5e1; cursor: not-allowed; filter: none; }
+.zappy-qv-viewlink { font-size: 13px; color: var(--accent, var(--primary, #ff0083)); text-decoration: underline; align-self: flex-start; }
+@media (max-width: 768px) {
+  .zappy-qv-modal { top: auto; bottom: 0; left: 0; transform: none; width: 100%; height: 80vh; max-height: 80vh; border-radius: 16px 16px 0 0; }
+  .zappy-qv-content { flex-direction: column; max-height: 80vh; overflow-y: auto; }
+  .zappy-qv-gallery { flex: none; }
+  .zappy-qv-main-img { min-height: 240px; height: 38vh; }
+  .zappy-qv-info { flex: none; padding: 20px 18px 24px; }
+  .zappy-qv-title { font-size: 20px; }
+  /* Keep the qty stepper compact + fixed and let the (non-wrapping) Add-to-cart
+     button take the rest on one row, mirroring the desktop layout. */
+  .zappy-qv-actions { gap: 10px; }
+  .zappy-qv-qty { flex: 0 0 auto; }
+  .zappy-qv-qty-btn { width: 32px !important; flex: 0 0 32px; }
+  .zappy-qv-qty-input { width: 34px !important; flex: 0 0 34px; }
+  .zappy-qv-addcart { flex: 1 1 auto; padding: 0 12px; }
+}
 
 /* Product tags (sale, new, featured badges) */
 .product-tag { display: inline-block; padding: 4px 10px; font-size: 11px; font-weight: 600; border-radius: 4px; background: var(--accent, var(--primary)); color: #fff; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 2px 4px rgba(0,0,0,0.15); pointer-events: auto; }
@@ -6883,7 +7637,7 @@ a, button {
   .product-grid.view-list .product-card .add-to-cart { flex: 0 0 auto; position: static; padding: 6px 12px; font-size: 11px; margin: 0 10px 10px 0; white-space: nowrap; align-self: center; }
   .card-favorite-btn { width: 30px; height: 30px; top: 6px; right: 6px; left: auto; }
   [dir="rtl"] .card-favorite-btn { left: 6px; right: auto; }
-  .card-favorite-btn svg { width: 15px; height: 15px; }
+  .card-favorite-btn svg, .product-card .card-quickview-btn svg { width: 15px; height: 15px; }
   .product-grid.view-list .card-favorite-btn { top: 6px; right: 6px; left: auto; }
   [dir="rtl"] .product-grid.view-list .card-favorite-btn { left: 6px; right: auto; }
 }
@@ -9491,7 +10245,24 @@ body.zappy-focused-page .zappy-announcement-bar {
   visibility: hidden !important;
 }
 
-/* Hide cookie consent while cart drawer is open; reappears when drawer closes if still needed *//* Checkout focus: hide cookie bar so it does not compete with payment UI *//* Checkout focus: minimal navbar (logo + cart) and compact footer */
+/* Hide cookie consent while cart drawer is open; reappears when drawer closes if still needed */
+body.zappy-cart-open #cc-main,
+body.zappy-cart-open #zappy-cookie-banner {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Checkout focus: hide cookie bar so it does not compete with payment UI */
+body.zappy-checkout-page #zappy-cookie-banner {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Checkout focus: minimal navbar (logo + cart) and compact footer */
 body.zappy-checkout-page nav.navbar:not(.zappy-catalog-menu) .nav-menu,
 body.zappy-checkout-page nav.navbar:not(.zappy-catalog-menu) .nav-links,
 body.zappy-checkout-page nav.navbar:not(.zappy-catalog-menu) .nav-cta,
@@ -9808,13 +10579,17 @@ section:not(.navbar),
 main,
 .page-container,
 /* IMPORTANT:
-   Use "-section" block matching and exclude BEM elements (class*="__").
+   Match only real class tokens ending in "-section", not substrings.
    This prevents breaking hero background wrappers like:
+   - .home-hero-section-bg
+   - .home-hero-section-scrim
+   - .home-hero-section-overlay
    - .home-hero-section__background
    which MUST remain position:absolute for full-bleed hero media.
    Also exclude divider-wrapper elements which MUST remain position:absolute
    at the bottom of their parent section for seamless section transitions. */
-[class*="-section"]:not([class*="__"]):not([class*="divider-wrapper"]):not([class*="divider_wrapper"]):not(.navbar):not(.zappy-announcement-bar):not(.zappy-catalog-menu):not(.zappy-section-controls):not([class*="zappy-"]) {
+[class$="-section"]:not([class*="__"]):not([class*="divider-wrapper"]):not([class*="divider_wrapper"]):not(.navbar):not(.zappy-announcement-bar):not(.zappy-catalog-menu):not(.zappy-section-controls):not([class*="zappy-"]),
+[class*="-section "]:not([class*="__"]):not([class*="divider-wrapper"]):not([class*="divider_wrapper"]):not(.navbar):not(.zappy-announcement-bar):not(.zappy-catalog-menu):not(.zappy-section-controls):not([class*="zappy-"]) {
   position: relative !important;
   z-index: 1 !important;
 }
@@ -10173,13 +10948,13 @@ main,
 /* ─────────────────────────────────────────────────────────────────────────────
    HOMEPAGE: FEATURED SECTIONS (PRODUCTS + CATEGORIES)
    These used to be styled by V1 base CSS; must live in V2 generateCss()
-   Background uses hero-divider-aware theme: #FFFFFF (LIGHT)
+   Background uses hero-divider-aware theme: var(--bg-light) (LIGHT)
    ───────────────────────────────────────────────────────────────────────────── */
 
 /* Featured Products Section (Home Page) */
 .featured-products-section {
   padding: 60px 24px !important;
-  background: #FFFFFF !important;
+  background: var(--bg-light) !important;
 }
 .featured-products-section .section-title {
   text-align: center !important;
@@ -10231,7 +11006,7 @@ main,
 /* Featured Categories Section (Home Page) */
 .featured-categories-section {
   padding: 60px 24px !important;
-  background: #FFFFFF !important;
+  background: var(--bg-light) !important;
 }
 .featured-categories-section .section-title {
   text-align: center !important;
@@ -10717,632 +11492,6 @@ main,
 }
 
 /* ==END ZAPPY V2 E-COMMERCE THEME CSS== */
-
-/* Legal Pages Content Styles */
-
-/* Legal Pages Content Styles */
-.legal-page-content {
-  padding: 120px 0 60px;
-  min-height: 60vh;
-  color: #f5f5f5;
-}
-
-.legal-page-content .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.legal-page-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: inherit;
-}
-
-.legal-page-content .last-updated {
-  color: #999;
-  margin-bottom: 2rem;
-  font-style: italic;
-}
-
-.legal-page-content h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: inherit;
-}
-
-.legal-page-content p {
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.legal-page-content ul {
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-[dir="rtl"] .legal-page-content ul {
-  padding-left: 0;
-  padding-right: 1.5rem;
-}
-
-.legal-page-content li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
-.legal-page-content .contact-box,
-.legal-page-content .contact-info {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-top: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.legal-page-content .contact-box a,
-.legal-page-content .contact-info a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.legal-page-content .contact-box a:hover,
-.legal-page-content .contact-info a:hover {
-  opacity: 0.8;
-}
-
-.legal-page-content .important-notice,
-.legal-page-content .legal-reference {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  margin: 1.5rem 0;
-  border-left: 4px solid currentColor;
-}
-
-[dir="rtl"] .legal-page-content .important-notice,
-[dir="rtl"] .legal-page-content .legal-reference {
-  border-left: none;
-  border-right: 4px solid currentColor;
-}
-
-/* Cookie Consent Styles */
-
-/* Cookie Consent Customizations ccCssV13 */
-:root {
-  /* --cc-bg has to STAY translucent (with the matching backdrop-filter on
-   * the bar below) so the slim bar reads as a frosted overlay rather than
-   * a solid horizontal stripe slapped on top of the page. The preferences
-   * modal — which doesn't use backdrop-filter — overrides this to a solid
-   * white below so it doesn't render see-through against the page. */
-  --cc-bg: rgba(255, 255, 255, 0.96);
-  --cc-modal-bg: #ffffff;
-  --cc-primary-color: #1f2937;
-  --cc-secondary-color: #4b5563;
-  --cc-btn-primary-bg: #c83a46;
-  --cc-btn-primary-color: #ffffff;
-  --cc-btn-primary-border: #c83a46;
-  --cc-btn-primary-hover-bg: #af212d;
-  --cc-btn-primary-hover-border: #af212d;
-  --cc-btn-primary-hover-color: #ffffff;
-  /* --cc-btn-secondary-* are used by BOTH the bar's "Customize" link and
-   * the preferences modal's "Accept Necessary" / "Save Preferences" pills.
-   * We keep the token defaults sensible (light grey fill, dark text) so
-   * the preferences-modal buttons stay visible, then override only
-   * .zappy-cookie-banner__button--customize directly to render the
-   * Customize link as a transparent underlined text. */
-  --cc-btn-secondary-bg: #f3f4f6;
-  --cc-btn-secondary-color: #1f2937;
-  --cc-btn-secondary-border: #e5e7eb;
-  --cc-btn-secondary-hover-bg: #e5e7eb;
-  --cc-btn-secondary-hover-color: #111827;
-  --cc-btn-secondary-hover-border: #d1d5db;
-  --cc-toggle-on-bg: #c83a46;
-}
-
-#cc-main,
-#cc--main {
-  font-family: inherit !important;
-  color: var(--cc-primary-color);
-}
-
-/* === Zappy-owned slim bottom bar ===
- * Single-row inline layout: [description text] ......... [Customize] [Accept]
- * The banner is our DOM (#zappy-cookie-banner), not the library's #cm
- * consent modal. That avoids vanilla-cookieconsent's internal
- * <button><span>Label</span></button> structure entirely.
- */
-#zappy-cookie-banner {
-  position: fixed !important;
-  inset: auto 0 0 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 10px 56px 10px 20px !important;
-  background: var(--cc-bg) !important;
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
-  backdrop-filter: saturate(180%) blur(12px);
-  border: none !important;
-  border-top: 1px solid rgba(200, 58, 70, 0.18) !important;
-  border-radius: 0 !important;
-  box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.04) !important;
-  display: flex !important;
-  align-items: center !important;
-  min-height: 52px !important;
-  font-size: 13px !important;
-  line-height: 1.4 !important;
-  z-index: 2147483646;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__inner {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  flex-wrap: nowrap !important;
-  gap: 16px !important;
-  max-width: 1200px;
-  width: 100% !important;
-  margin: 0 auto;
-  padding: 0 !important;
-  min-height: 32px !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__text {
-  flex: 1 1 auto;
-  min-width: 0;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  color: var(--cc-primary-color) !important;
-  height: 32px !important;
-  min-height: 32px !important;
-  line-height: 32px !important;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__actions {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 8px !important;
-  flex: 0 0 auto;
-  border: none !important;
-  padding: 0 !important;
-  background: transparent !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__button {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  padding: 0 16px !important;
-  height: 32px !important;
-  min-height: 0 !important;
-  line-height: 1 !important;
-  border-radius: 999px !important;
-  transition: background-color 0.15s ease, color 0.15s ease;
-  cursor: pointer;
-}
-
-/* Primary "Accept" — filled pill in site primary color */
-#zappy-cookie-banner .zappy-cookie-banner__button--accept {
-  background-color: var(--cc-btn-primary-bg) !important;
-  color: var(--cc-btn-primary-color) !important;
-  border: 1px solid var(--cc-btn-primary-border) !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__button--accept:hover {
-  background-color: var(--cc-btn-primary-hover-bg) !important;
-  border-color: var(--cc-btn-primary-hover-border) !important;
-}
-
-/* Secondary "Customize" — borderless underlined text link.
- * Same height as the Accept pill so the row stays perfectly aligned, but
- * with no fill, no border, and an underline that sits 3px below the
- * baseline (text-underline-offset). Hard-coded brand color so this rule
- * doesn't depend on --cc-btn-secondary-* (which have to stay sensible
- * defaults for the preferences modal's two secondary pills). */
-#zappy-cookie-banner .zappy-cookie-banner__button--customize {
-  background-color: transparent !important;
-  color: #c83a46 !important;
-  border: none !important;
-  padding: 0 8px !important;
-  height: 32px !important;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  border-radius: 6px !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__button--customize:hover {
-  color: #af212d !important;
-  background-color: transparent !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__close {
-  position: absolute !important;
-  top: 8px !important;
-  right: 12px !important;
-  width: 28px !important;
-  height: 28px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 999px !important;
-  color: var(--cc-secondary-color) !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-  line-height: 1 !important;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-#zappy-cookie-banner .zappy-cookie-banner__close:hover {
-  background-color: rgba(0, 0, 0, 0.06) !important;
-  color: var(--cc-primary-color) !important;
-}
-#zappy-cookie-banner .zappy-cookie-banner__button:focus-visible,
-#zappy-cookie-banner .zappy-cookie-banner__close:focus-visible {
-  outline: 2px solid var(--cc-btn-primary-bg) !important;
-  outline-offset: 2px;
-}
-/* RTL: anchor the X to the top-LEFT and shift body padding accordingly. */
-[dir="rtl"] #zappy-cookie-banner {
-  padding: 10px 20px 10px 56px !important;
-}
-[dir="rtl"] #zappy-cookie-banner .zappy-cookie-banner__close {
-  right: auto !important;
-  left: 12px !important;
-}
-
-/* === Preferences modal — minimalist restyle ===
- * The modal opens when "Customize" is clicked. It MUST render as a solid
- * card — pre-fix it inherited the bar's translucent --cc-bg without the
- * matching backdrop-filter, leaving the page footer visibly bleeding
- * through the modal box, the title, the toggle rows, and the bottom
- * button row. Solid white box + clean shadow + an explicit slightly
- * darker scrim on the overlay restores proper modal hierarchy. */
-/* The scrim belongs on wrapper layers only. In vanilla-cookieconsent v3,
- * .pm / #pm is the preferences card itself, so styling .pm as the dark
- * overlay makes the card look transparent. */
-#cc-main .pm-wrapper,
-#cc--main .pm-wrapper,
-#cc-main .pm-wrapper.pm--box,
-#cc--main .pm-wrapper.pm--box {
-  background: rgba(0, 0, 0, 0.32) !important;
-}
-
-#cc-main #pm,
-#cc--main #pm,
-#cc-main .pm,
-#cc--main .pm,
-#cc-main .pm .pm__box,
-#cc--main .pm .pm__box,
-#cc-main .pm__box,
-#cc--main .pm__box {
-  background: var(--cc-modal-bg) !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-  border-radius: 14px !important;
-  border: 1px solid rgba(0, 0, 0, 0.06) !important;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18) !important;
-}
-
-#cc-main .pm__header,
-#cc--main .pm__header,
-#cc-main .pm__body,
-#cc--main .pm__body,
-#cc-main .pm__footer,
-#cc--main .pm__footer,
-#cc-main .pm__section,
-#cc--main .pm__section {
-  background: var(--cc-modal-bg) !important;
-}
-
-#cc-main .pm__title,
-#cc--main .pm__title {
-  font-weight: 600 !important;
-  color: var(--cc-primary-color) !important;
-}
-
-#cc-main .pm__btn[data-role="accept-all"],
-#cc--main .pm__btn[data-role="accept-all"] {
-  background-color: var(--cc-btn-primary-bg) !important;
-  border-color: var(--cc-btn-primary-border) !important;
-  color: var(--cc-btn-primary-color) !important;
-  border-radius: 999px !important;
-}
-
-#cc-main .pm__btn[data-role="accept-all"]:hover,
-#cc--main .pm__btn[data-role="accept-all"]:hover {
-  background-color: var(--cc-btn-primary-hover-bg) !important;
-  border-color: var(--cc-btn-primary-hover-border) !important;
-}
-
-/* Secondary modal pills — "Accept Necessary" + "Save Preferences".
- * Must be a visible solid fill (light grey on white card) so users can
- * actually find them. Pre-fix these inherited --cc-btn-secondary-bg:
- * transparent (used by the bar's Customize text link), making them
- * invisible against the modal background. */
-#cc-main .pm__btn,
-#cc--main .pm__btn {
-  border-radius: 999px !important;
-}
-#cc-main .pm__btn[data-role="necessary"],
-#cc--main .pm__btn[data-role="necessary"],
-#cc-main .pm__btn[data-role="save"],
-#cc--main .pm__btn[data-role="save"] {
-  background-color: var(--cc-btn-secondary-bg) !important;
-  color: var(--cc-btn-secondary-color) !important;
-  border: 1px solid var(--cc-btn-secondary-border) !important;
-}
-#cc-main .pm__btn[data-role="necessary"]:hover,
-#cc--main .pm__btn[data-role="necessary"]:hover,
-#cc-main .pm__btn[data-role="save"]:hover,
-#cc--main .pm__btn[data-role="save"]:hover {
-  background-color: var(--cc-btn-secondary-hover-bg) !important;
-  color: var(--cc-btn-secondary-hover-color) !important;
-  border-color: var(--cc-btn-secondary-hover-border) !important;
-}
-
-/* Toggle thumbs in brand color when on */
-#cc-main .section__toggle:checked + .toggle__icon,
-#cc--main .section__toggle:checked + .toggle__icon,
-#cc-main .section__toggle:checked ~ .toggle__icon,
-#cc--main .section__toggle:checked ~ .toggle__icon {
-  background-color: var(--cc-toggle-on-bg) !important;
-}
-
-/* Mobile fallback: two rows (description on top, buttons below) */
-@media (max-width: 640px) {
-  #zappy-cookie-banner {
-    padding: 10px 14px !important;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__inner {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 8px !important;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__text {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-    height: auto !important;
-    min-height: 0 !important;
-    line-height: 1.4 !important;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__actions {
-    width: 100%;
-    justify-content: space-between;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__button--accept {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-}
-
-/* Cookie preferences button in legal footer keeps default behavior */
-.cookie-preferences-btn:hover {
-  text-decoration: none !important;
-}
-
-/* Accessibility Styles */
-
-/* Basic Accessibility Enhancements */
-:root {
-  --accessibility-focus: #1E1E1E;
-}
-
-/* Skip link styles */
-.skip-link:focus {
-  position: absolute !important;
-  top: 6px !important;
-  left: 6px !important;
-  background: #000 !important;
-  color: white !important;
-  padding: 8px !important;
-  text-decoration: none !important;
-  z-index: 10000 !important;
-  border-radius: 4px !important; transform: none; }
-
-/* Enhanced focus indicators */
-*:focus {
-  outline: 2px solid var(--accessibility-focus) !important;
-  outline-offset: 2px !important;
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  * {
-    border-color: currentColor !important;
-  }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Screen reader only content */
-.sr-only {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-
-/* Custom Accessibility Toolbar Styling - Zappy Style */
-
-/* Main button icon - ONLY target the floating button, not menu elements */
-#mic-access-tool-general-button {
-  background-color: transparent !important;
-  background: transparent !important;
-  border: none !important;
-  width: 32px !important;
-  height: 32px !important;
-  min-width: 32px !important;
-  min-height: 32px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 0 !important;
-  line-height: 0 !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-/* AGGRESSIVELY hide all text in the button */
-#mic-access-tool-general-button,
-#mic-access-tool-general-button *:not(svg):not(path):not(circle):not(rect):not(polygon):not(ellipse):not(line):not(polyline):not(g) {
-  font-size: 0 !important;
-  color: transparent !important;
-  text-indent: -9999px !important;
-  line-height: 0 !important;
-  letter-spacing: -999em !important;
-  white-space: nowrap !important;
-}
-
-/* Hide text nodes specifically */
-
-/* Hover state - keep text hidden */
-#mic-access-tool-general-button:hover {
-  background-color: rgba(30, 30, 30, 0.1) !important;
-  background: rgba(30, 30, 30, 0.1) !important;
-  box-shadow: 0 2px 8px rgba(30, 30, 30, 0.2) !important;
-  font-size: 0 !important;
-  color: transparent !important;
-  text-indent: -9999px !important;
-}
-
-/* Target the SVG and make it the selected color */
-#mic-access-tool-general-button svg {
-  width: 18px !important;
-  height: 18px !important;
-  max-width: 18px !important;
-  max-height: 18px !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  margin: 0 !important;
-  /* Convert green to selected color using dynamic CSS filter */
-  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
-}
-
-/* Also directly target all SVG elements to be the selected color */
-#mic-access-tool-general-button svg,
-#mic-access-tool-general-button svg *,
-#mic-access-tool-general-button svg path,
-#mic-access-tool-general-button svg circle,
-#mic-access-tool-general-button svg rect,
-#mic-access-tool-general-button svg polygon,
-#mic-access-tool-general-button svg ellipse,
-#mic-access-tool-general-button svg line,
-#mic-access-tool-general-button svg polyline,
-#mic-access-tool-general-button svg g {
-  fill: #1E1E1E !important;
-  stroke: #1E1E1E !important;
-  color: #1E1E1E !important;
-}
-
-/* Target images if the icon is an img instead of SVG */
-#mic-access-tool-general-button img,
-#mic-access-tool-general-button i {
-  width: 18px !important;
-  height: 18px !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  /* Convert green to selected color using dynamic filter */
-  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
-}
-
-/* Menu header with selected color */
-#mic-access-tool-box .mic-access-tool-box-header,
-.mic-access-tool-box-header,
-div[id*="mic-access-tool-box"] header,
-div[id*="mic-access-tool-box"] .header {
-  background: #1E1E1E !important;
-  color: white !important;
-}
-
-/* Make header text white - title and close button */
-#mic-access-tool-box .mic-access-tool-box-header *,
-.mic-access-tool-box-header *,
-div[id*="mic-access-tool-box"] header *,
-div[id*="mic-access-tool-box"] .header * {
-  color: white !important;
-}
-
-/* Close button text */
-#mic-access-tool-box .mic-access-tool-box-header button,
-#mic-access-tool-box .mic-access-tool-box-header a,
-#mic-access-tool-box [class*="close"],
-#mic-access-tool-box button[title*="close"],
-#mic-access-tool-box button[title*="Close"] {
-  color: white !important;
-  background: transparent !important;
-}
-
-/* Active buttons and highlights in menu */
-#mic-access-tool-box button.active,
-#mic-access-tool-box button:hover,
-div[id*="mic-access-tool-box"] button.active,
-div[id*="mic-access-tool-box"] button:hover {
-  border-color: #1E1E1E !important;
-  color: #1E1E1E !important;
-  background-color: rgba(30, 30, 30, 0.1) !important;
-}
-
-/* Reset button */
-#mic-access-tool-box button[title*="reset"],
-#mic-access-tool-box button[title*="Reset"],
-#mic-access-tool-box [class*="reset"],
-div[id*="mic-access-tool-box"] button[class*="reset"] {
-  background: #1E1E1E !important;
-  color: white !important;
-}
-
-/* Reset button text and icon */
-#mic-access-tool-box button[title*="reset"] *,
-#mic-access-tool-box button[title*="Reset"] *,
-#mic-access-tool-box [class*="reset"] *,
-div[id*="mic-access-tool-box"] button[class*="reset"] * {
-  color: white !important;
-}
-
-/* Accessibility widget - displayed by default on both mobile and desktop */
-/* Position: opposite side from WhatsApp button (RTL sites → left, LTR sites → right) */
-#mic-access-tool-general-button,
-.mic-access-tool-general-button,
-#mic-init-access-tool .mic-access-tool-general-button,
-#mic-init-access-tool #mic-access-tool-general-button,
-._access-icon {
-  display: flex !important;
-}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
